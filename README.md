@@ -28,7 +28,13 @@ dsh plugin --profile web remove dsh-opencodego-usage
 
 ## Usage
 
-- The indicator sits at the bottom-right of the conversation input; its color reflects the lowest remaining share across the three windows.
+- The indicator sits at the bottom-right of the conversation input; its color reflects the lowest remaining share across the three windows:
+
+  | Remaining share | Color |
+  |---|---|
+  | > 50% | 🟢 green |
+  | 20–50% | 🟡 yellow |
+  | < 20% | 🔴 red |
 - Click it to expand the panel:
   - `rolling` — quota used in roughly the last 5 hours
   - `weekly` — quota used in roughly the last 7 days
