@@ -2,6 +2,27 @@
   "name": "dsh-opencodego-usage",
   "version": "0.1.0",
   "description": "OpenCodeGo 用量 v0.1（作者：Xu Yuanshan）：输入框右下角呼吸灯显示剩余额度，点击展开液态玻璃面板——三窗口进度条（5小时/7天/30天）+ 重置时间，Key 自动读取 DSH 凭据（opencode-go 提供商）。",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BeiZi6/dsh-opencodego-usage.git"
+  },
+  "homepage": "https://github.com/BeiZi6/dsh-opencodego-usage#readme",
+  "bugs": {
+    "url": "https://github.com/BeiZi6/dsh-opencodego-usage/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "plugin",
+    "opencodego",
+    "usage",
+    "quota",
+    "web-gui"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
   "type": "module",
   "main": "index.js",
   "exports": {
