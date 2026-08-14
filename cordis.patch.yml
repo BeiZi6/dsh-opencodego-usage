@@ -1,0 +1,6 @@
+# dsh-opencodego-usage bundle layer.
+# Registers the OpenCodeGo 用量 plugin into the DSH web composition.
+# Host 半端注册 /opencodego-usage 同源路由；Client 半端渲染呼吸灯与液态玻璃面板。
+- insert:
+    - id: opencodego-usage
+      name: 'dsh-opencodego-usage'

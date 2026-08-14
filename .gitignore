@@ -1,0 +1,4 @@
+node_modules/
+*.log
+.ocg-state.json
+ocg-raw.json
