@@ -1,5 +1,7 @@
 # dsh-opencodego-usage
 
+**[English](README.md) · [简体中文](README.zh-CN.md)**
+
 OpenCodeGo quota monitor for the DeepSeek Harness (DSH) Web GUI: a breathing indicator at the bottom-right of the input box shows your remaining quota at a glance; click it to open a liquid-glass panel with per-window progress bars and reset times.
 
 ## Features
