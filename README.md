@@ -79,6 +79,7 @@ The key is only ever sent to the official OpenCodeGo quota endpoint over HTTPS.
 - DeepSeek Harness Web GUI (`dsh web`)
 - Node.js >= 22.19
 - Peer dependencies: `@deepseek-ai/cordis` (^4), `@deepseek-ai/dsh-host-webserver` (^0.1.0-rc.6)
+- Linux / macOS / Windows — usage lookup shells out to the system `curl` executable (no `.exe` suffix, so Windows resolves `curl.exe` automatically)
 
 ## License
 

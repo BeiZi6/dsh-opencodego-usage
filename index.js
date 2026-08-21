@@ -21,7 +21,7 @@ const SEP = '@@OCG_STATUS@@'
 function curl(url, apiKey) {
   return new Promise((resolve) => {
     execFile(
-      'curl.exe',
+      'curl',
       ['-sS', '-m', '20', '-H', 'Authorization: Bearer ' + apiKey, '-w', '\n' + SEP + '%{http_code}', url],
       { timeout: 25000, encoding: 'utf8', maxBuffer: 4 * 1024 * 1024 },
       (error, stdout, stderr) => resolve({ error, stdout, stderr }),
