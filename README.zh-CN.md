@@ -80,6 +80,7 @@ Key 只会通过 HTTPS 发送给 OpenCodeGo 官方额度接口。
 - DeepSeek Harness Web GUI(`dsh web`)
 - Node.js >= 22.19
 - Peer 依赖:`@deepseek-ai/cordis`(^4)、`@deepseek-ai/dsh-host-webserver`(^0.1.0-rc.6)
+- Linux / macOS / Windows —— 用量查询通过系统 `curl` 可执行文件完成(不带 `.exe` 后缀,Windows 会自动解析 `curl.exe`)
 
 ## 许可证
 
