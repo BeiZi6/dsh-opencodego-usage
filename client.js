@@ -295,19 +295,17 @@ window.__ModuleLoader__.load({
     }
 
     module.exports = {
+      inject: ['slots'],
       apply(ctx) {
-        const slots = ctx.get('slots')
-        if (slots === undefined) return
-
         const tag = document.createElement('style')
         tag.textContent = CSS
         document.head.append(tag)
         ctx.effect(() => () => tag.remove())
 
-        ctx.effect(() => slots.inject('conversation.input.right', () => slots.register(
+        ctx.slots.inject('conversation.input.right', () => ctx.slots.register(
           { name: 'conversation.input.right', id: 'opencodego-usage', order: 10, label: 'OpenCodeGo 用量' },
           () => React.createElement(UsageDot, null),
-        )))
+        ))
       },
     }
 
