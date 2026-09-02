@@ -160,9 +160,10 @@ function extractWindows(json) {
   return out
 }
 
+export const inject = ['webServer']
+
 export function apply(ctx) {
-  ctx.inject(['webServer'], (httpCtx) => {
-    httpCtx.effect(() => httpCtx.webServer.register({
+  ctx.effect(() => ctx.webServer.register({
       kind: 'exact',
       path: '/opencodego-usage',
       handler: async (req, res) => {
@@ -224,5 +225,4 @@ export function apply(ctx) {
         }
       },
     }))
-  })
 }
