@@ -14,7 +14,12 @@ DeepSeek Harness (DSH) Web GUI 的 OpenCodeGo 额度监控插件:输入框右下
 
 ## 安装
 
-需要启用 web profile 的 DeepSeek Harness。从官方 registry 安装:
+需要启用 web profile 的 DeepSeek Harness。
+
+插件支持 `dsh-host-webserver` 0.1.x 以及从 `0.2.1-rc.2` 开始的 0.2.x 系列，
+包括 DSH Desktop 2.0.18。启动时指示灯会等待输入框插槽服务就绪后再注册。
+
+从官方 registry 安装:
 
 ```sh
 dsh plugin --profile web add github:BeiZi6/dsh-opencodego-usage

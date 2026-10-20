@@ -14,7 +14,12 @@ OpenCodeGo quota monitor for the DeepSeek Harness (DSH) Web GUI: a breathing ind
 
 ## Installation
 
-Requires DeepSeek Harness with the web profile enabled. Install from the official registry:
+Requires DeepSeek Harness with the web profile enabled.
+
+The plugin supports `dsh-host-webserver` 0.1.x and 0.2.x (starting at `0.2.1-rc.2`),
+including DSH Desktop 2.0.18. The indicator waits for the input-slot service during startup.
+
+Install from the official registry:
 
 ```sh
 dsh plugin --profile web add github:BeiZi6/dsh-opencodego-usage
