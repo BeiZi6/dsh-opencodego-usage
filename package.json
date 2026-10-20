@@ -24,6 +24,9 @@
     "node": ">=22.19.0"
   },
   "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
   "main": "index.js",
   "exports": {
     ".": "./index.js",
@@ -49,6 +52,6 @@
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.1",
-    "@deepseek-ai/dsh-host-webserver": "^0.1.0-rc.6"
+    "@deepseek-ai/dsh-host-webserver": "^0.1.0-rc.6 || ^0.2.1-rc.2"
   }
 }
